@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping>
+    <class name="com.hiep.todolist.entity.User" table="users">
+        <meta attribute="class-description">
+            Lớp này chưa thông tin chi tiết về user.
+        </meta>
+        <id name="id" type="int" column="id">
+            <generator class="native" />
+        </id>
+        <property name="userName" column="user_name" type="string" />
+        <property name="password" column="password" type="string" />
+        <property name="roles" column="roles" type="string" />
+     
+    </class>
+</hibernate-mapping>
